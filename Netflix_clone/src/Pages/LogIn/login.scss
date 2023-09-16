@@ -1,0 +1,94 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left,  rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("https://i0.wp.com/www.nationalturk.com/en/wp-content/uploads/2022/05/netflix-codes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .top {
+        display: flex;
+        align-items: center;
+        padding: 20px 50px;
+        justify-content: space-between;
+
+        .logo {
+            height: 45px;
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        
+
+        form {
+            display: flex;
+            align-items: center;
+            text-align: center; ;
+            flex-direction: column;
+            justify-content: space-around;
+            color: white;
+            width: 400px;
+            height: 400px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: var(--main-color);
+
+            h1{
+                color: aliceblue;
+                &:hover{
+                    color: red;
+                }
+            }
+
+            input {
+                width: 400px;
+                height: 40px;
+                background-color: grey;
+                border-radius: 5px;
+                padding-left: 10px;
+                color: aliceblue;
+                margin-bottom: 10px;
+
+                &::placeholder {
+                    color: lightgray;
+                }
+            }
+            .loginButton{
+                width: 200px;
+                height: 40px;
+                background-color: red;
+                border-radius: 5px;
+                color: antiquewhite;
+                font-weight: 500;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+
+            span{
+                font-size: 15px;
+                color: lightgray;
+                margin-bottom: 5px;
+
+                b{
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            small {
+                color: lightgray;
+                font-size: 12px;
+            }
+        }
+    }
+}

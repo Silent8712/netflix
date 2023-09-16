@@ -1,0 +1,66 @@
+.footer{
+    height: 60vh;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    .Line{
+        width: 100%;
+        height: 5px;
+        opacity: 0.59;
+        background-color: #fff;
+    }
+    .Question{
+       img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 100px;
+       }
+    }
+    .Links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 100px;
+        margin-right: 100px;
+
+        .First_row{
+            display: flex;
+            flex-direction: column;
+            span{
+                color: #fff;
+                opacity: 0.79;
+                margin-bottom: 25px;
+            }
+        }
+        .Second_row{
+            display: flex;
+            flex-direction: column;
+            span{
+                color: #fff;
+                opacity: 0.79;
+                margin-bottom: 25px;
+            }
+        }
+        .Third_row{
+            display: flex;
+            flex-direction: column;
+            span{
+                color: #fff;
+                opacity: 0.79;
+                margin-bottom: 25px;
+            }
+        }
+        .Fourth_row{
+            display: flex;
+            flex-direction: column;
+            span{
+                color: #fff;
+                opacity: 0.79;
+                margin-bottom: 25px;
+            }
+        } 
+    }
+}

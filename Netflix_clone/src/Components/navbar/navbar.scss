@@ -1,0 +1,124 @@
+.Navbar{
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--font-family);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(45deg, transparent, rgba(0,0,0,0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    &.scrolled{
+        background: var(--main-color)
+    }
+    .Container{
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        .Left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Series_container{
+                display: flex;
+          
+                .Category {
+                    position: absolute;
+                    top: 60px;
+                    left: 290px;
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+            
+                    select{
+                        cursor: pointer;
+                        margin-left: 20px;
+                        padding: 5px;
+                        border: 2px solid #fff;
+                        background-color: var(--main-color);
+                        color: #fff;
+            
+                        option{
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+            .Movies_container{
+                .Category {
+                    position: absolute;
+                    top: 60px;
+                    left: 360px;
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+            
+                    select{
+                        cursor: pointer;
+                        margin-left: 20px;
+                        padding: 5px;
+                        border: 2px solid #fff;
+                        background-color: var(--main-color);
+                        color: #fff;
+            
+                        option{
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+
+            img{
+                height: 35px;
+                margin-right: 40px;
+            }
+            span {
+                margin-right: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .Right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                border-radius: 50px;
+                height: 25px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+            .icon {
+                margin: 0px 15px;
+                cursor: pointer;
+              }
+            .profile{
+                .Options{
+                    display: none;
+                }
+                span {
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                &:hover{
+                    .Options{
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        background-color: var(--main-color);
+                  }
+               }
+            }
+        }
+    }
+}

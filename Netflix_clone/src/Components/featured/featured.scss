@@ -1,0 +1,63 @@
+.featured {
+    height: 90vh;
+    position: relative;
+    background: linear-gradient(45deg, transparent, rgba(0,0,0,0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .info{
+        width: 35%;
+        position: absolute;
+        left: 50px;
+        bottom: 200px;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+         img {
+            position: relative;
+            width: 475px;
+            height: 100%;
+            object-fit: cover;
+            left: -20px;
+         }
+        .desc{
+            display: block;
+            width: 450px;
+            background: linear-gradient(270deg, transparent 50%, rgba(0,0,0,0.5));
+            margin: 20px 0px;
+            font-size: 17px;
+        }
+        .Buttons{
+            display: flex;
+            button{
+                padding: 10px 20px;
+                font-size: 14px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                border: none;
+                border-radius: 5px;
+                
+                &.Play{
+                    background-color: #e30505;
+                    color: var(--main-color);
+                }
+                &.More{
+                    background-color: black;
+                    color: #fff;
+                }
+                span{
+                    font-weight: 500;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
